@@ -777,7 +777,6 @@ kotlin {
             implementation(commonMainDependencyBundle)
         }
         commonTest.dependencies {
-            implementation(kotlin("test"))
             commonTestDependencyBundle?.let { implementation(it) }
         }
         if (benchmarkEnabled) {
