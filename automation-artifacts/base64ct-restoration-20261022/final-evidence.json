@@ -1,0 +1,2031 @@
+{
+  "recorded_utc": "2026-10-22T22:15:12.972780+00:00",
+  "repository": "/Volumes/stuff/Projects/kotlinmania/base64ct-kotlin",
+  "git_head": "a875e1ee7388b78f2920323359d46d2bab4be0c1",
+  "git_branch": "automation/gradle-notice-properties-20261020",
+  "raw_exit_codes": {
+    "baseline-publication": 1,
+    "concrete-results-check-2": 0,
+    "final-local-gate": 1,
+    "final-publication": 0,
+    "final-local-android-verification": 0,
+    "final-ast": 0
+  },
+  "source_sha256": {
+    "AGENTS.md": "4f3ed2053ae27c36f8442879fc323dab559fc63ded5b6f399aeec3b166f49898",
+    "ANDROID.md": "a6a5929e04f440e6028fda893c8d212a77f373f9d6ae328d6027974129666d22",
+    "SWIFT.md": "10b2c22c711b08bfcd06a95c130c417ae9988a85c7a13024b0a770a7f74dbcdb",
+    "V2_SWIFT.md": "50ccd71fa109f845be7bd9bb85b90973171e284839a0fc0c2641c5f61ff9e31e",
+    "build.gradle.kts": "1ea28821e7f9a3605664676b926be7c33e7ca6279f9014be5f43e8552a4f0cc3",
+    "gradle/libs.versions.toml": "77403ce41d8305a346229afd7da1c5a16b4f94631c8244a4b4c7afc6d7c49727",
+    "gradle.properties": "95d2fc378ab9f8892d6287f75a001917944f2bee91b96ce173d64fcdb6a5f288",
+    "gradlew": "a5a5c199ba02189ae8c46a334223371a20599d9c298ef65e7540ede4a3f72d59",
+    "gradlew.bat": "f17917f8dbe61182b149273ee78090fec1197442c3f38276af907bfa5190db16",
+    "kotlin-js-store/yarn.lock": "3b6f947e8b373356a0a44073b68618b7d8d1c21fba82160f4298d1e11177145e",
+    "settings.gradle.kts": "342033ae086a39658b72a7716745e5b00636e9c8e55a2ddbc2c1e95c8b8a1e35",
+    "src/androidMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "13f5babe6fc473bdc40c6646b9b5a10feb56c20c0068ebe0b766f496061a43fb",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/Base64Result.kt": "0fa4afdd3f734d1254a2b3c81cd07dbb583c0afab7622a50cae0e849460acebb",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/ByteSlice.kt": "b469411ad04363ae1b1a037f798d2091674675a91df9bcffebe900153b273844",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/Alphabet.kt": "93a2a684f2f93af9be0542c251188abd3bffaa75db8ec7077b45e4510cb1f5d9",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/bcrypt/Bcrypt.kt": "5286bedca6a82128d94c6b4d275e59cb75a1569e146431fc744ca482ee5f5f43",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/crypt/Crypt.kt": "f78f31bfc88af6771d53fd0cafe340dc6c56bb2c1275b0c7755f4b35f27942d3",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/pbkdf2/Pbkdf2.kt": "23ccab686079b66ba74d54bea926718efed0b6aca2b3ac56f0c7544e7094c74c",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/shacrypt/ShaCrypt.kt": "8694ae27ae08899767479c31d419a3d232d5f75a466ab21e5917e7f4372f877a",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/standard/Standard.kt": "b87ad6d739ead43781b4220f5e7e7e2deec3c5a85c441b3336ae275dcfd62d6a",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/url/Url.kt": "d1c875db107da4fb462178a001a1efe7bb3f743a4e76bef2737fffa9a4684ec9",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/decoder/Decoder.kt": "2a707962e1590078666add63c70910adf65dc404964e11bb379912f78bdabb21",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/encoder/Encoder.kt": "11eb82e3be9ad79d174f86c9726c61110d5cb2798dc55651dea9f9bd44713334",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/encoding/Encoding.kt": "9edf28afee6e5fba0ccafef47a8ae31bb66f0eae8d1dbf8ab9f1011f9bf83bd4",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/errors/Errors.kt": "e6e2104e172c32ca6040ea3b828cc8e29534e51dbcda872c36035386c8ad8ae0",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/lineending/LineEnding.kt": "575819d83d8742e1d062c9b478576ff2fccd0c68896afef681206250e12501c3",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/BcryptTest.kt": "129a7d32ce02fb8e91b5f7a33d0fb64ca1733129dd521a48ba2b4ee6590db135",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/BenchmarkBehaviorTest.kt": "f7509b2d89bcb13666a1d4b5ab9d7ce94ca6e06dc740de01b5a21d9bf6fb626f",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/CoreContractTest.kt": "34ab649c6dbe01658c8ee57419a76cdd7d4058e502a2397c71596504c0fa06cd",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/CryptTest.kt": "284d6ae86562570fdd5dc14dbef2ba642545b57d2fa39415fbf6ca47e6aa90e1",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/DecoderTest.kt": "0d3ae674000e0f41c9d973c32d43a1067024c5b2cc307cf6a9b79147950aa20c",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/EncoderTest.kt": "406936171fa36c85b1a70c3b84b00e029e39d31e5ddafcd0390b3706e09e5874",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/Pbkdf2Test.kt": "d36ab8d6503d31dd6f9c034de393dc367daf5cec772fd15f7e116268f38b09c0",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/Proptests.kt": "0da9b287ac4d339f2f501747362d95854ef0dc6d3a5c86f46530399c49d08aa2",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/ShaCryptTest.kt": "b46c972087bb783b6f15923b34fcf3e9e454380dae757878a984816a9b5d781c",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/StandardTest.kt": "bc5389de30e1d146e05cc6e81afcbb77d0e7a6c49aac941fd27d90b5291773e5",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/TestVector.kt": "86a5a0a7650fd6d65a36dbfb345b81a0ed818632203b09a04dcb9954e6d4f9b3",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/TestVectors.kt": "e27e32254db703e4f6423ec94a3e90cc7f2e4e4da2e181fd6de8c5df2826d816",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/UrlTest.kt": "2b11770dc9956b28eedf2baaab6bfd7220b8bd76a5bce1cb8b8cb4bf34095318",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/UsageExampleTest.kt": "47d12b8d79b3879ee1c78bdbc72cb2937cbe86b7f91267622f42d8bab9c38903",
+    "src/jsMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "13f5babe6fc473bdc40c6646b9b5a10feb56c20c0068ebe0b766f496061a43fb",
+    "src/jvmMain/kotlin/io/github/kotlinmania/base64ct/internal/FfiJni.kt": "244e8892b26fc439045d5cbe539dc3354c77db4d592d2b01c4873d8d965dcc94",
+    "src/jvmMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "445255043036cac239787bf1fcbcb7c5116a3a315f3cde1d1c0e13d24c9d4e91",
+    "src/mingwX64Main/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "572abe03b001f59a9353a4939fe49309d38d944e69cdc26111606de670fee01c",
+    "src/posixMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "13f5babe6fc473bdc40c6646b9b5a10feb56c20c0068ebe0b766f496061a43fb",
+    "src/wasmJsMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "13f5babe6fc473bdc40c6646b9b5a10feb56c20c0068ebe0b766f496061a43fb",
+    "src/wasmWasiMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt": "13f5babe6fc473bdc40c6646b9b5a10feb56c20c0068ebe0b766f496061a43fb",
+    "swift-test-harness/Package.swift": "d770a44cf5ca7885e53fd8b6f9a014460ce5f0ede0095c445f5e5109139a9a62",
+    "swift-test-harness/Tests/SwiftTestHarnessTests/ExampleTests.swift": "f606b9786f7e01185138d191e8c23ac744ab53834c8192c5549a3a12e4b0ea2a",
+    "verification/strict-swift.xcconfig": "42bf08cc3d41279e6fba8416d2be6ba8571225f2e685a3c1c019ea1d053806a1"
+  },
+  "changed_existing_files_since_ownership": [
+    "build.gradle.kts",
+    "gradle.properties",
+    "kotlin-js-store/yarn.lock",
+    "settings.gradle.kts",
+    "swift-test-harness/Tests/SwiftTestHarnessTests/ExampleTests.swift"
+  ],
+  "removed_existing_files_since_ownership": [
+    "kotlin-js-store/wasm/yarn.lock"
+  ],
+  "new_kotlin_files_since_ownership": [
+    "src/androidMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/Base64Result.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/ByteSlice.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/Alphabet.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/bcrypt/Bcrypt.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/crypt/Crypt.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/pbkdf2/Pbkdf2.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/shacrypt/ShaCrypt.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/standard/Standard.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/alphabet/url/Url.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/decoder/Decoder.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/encoder/Encoder.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/encoding/Encoding.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/errors/Errors.kt",
+    "src/commonMain/kotlin/io/github/kotlinmania/base64ct/lineending/LineEnding.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/BcryptTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/BenchmarkBehaviorTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/CoreContractTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/CryptTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/DecoderTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/EncoderTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/Pbkdf2Test.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/Proptests.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/ShaCryptTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/StandardTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/TestVector.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/TestVectors.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/UrlTest.kt",
+    "src/commonTest/kotlin/io/github/kotlinmania/base64ct/UsageExampleTest.kt",
+    "src/jsMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/jvmMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/mingwX64Main/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/posixMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/wasmJsMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt",
+    "src/wasmWasiMain/kotlin/io/github/kotlinmania/base64ct/lineending/PlatformLineEnding.kt"
+  ],
+  "swift_manifest_unchanged_since_ownership": true,
+  "runtime_tests": [
+    {
+      "task": "iosSimulatorArm64Test",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1114,
+          "sha256": "4e52197a20a196a9c4301145158696e679065870721e79dffb1741377320ae7e"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 844,
+          "sha256": "48b1ffb31ae7b3c08890edef42d452fb9db847b2baafc5093f0f453378e23dae"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1353,
+          "sha256": "d26e6f392da9d38a3ee94b8b1d3876161471cee64d6090af57021a7bad789eeb"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1110,
+          "sha256": "8859010e478e90e12b00be2e381309b0fa3024f7ad955293b5769e081931fbf9"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1241,
+          "sha256": "63a40072132a5c329ef9b5b3529aba95e7de8f08d7dc2fd30c6ed69a6a4fe526"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1101,
+          "sha256": "16a110309fde4f85051c8632d59a235718c80643de60cf4cebbb29c52d0ea88b"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1260,
+          "sha256": "1237315f0f855db72378b978d486e9074b01491c56750ca8114e23b375efd491"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1512,
+          "sha256": "9a9a5765bab7b4297d16a8aebebcf07b2dccb2ff46d2fd6822cda5844250d397"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1126,
+          "sha256": "e04690fd44969d0592bb10ec9f086f6ea11f978048fa4e65b1f8461bb4ca1752"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 2068,
+          "sha256": "da2e0bed32cf0c118dfdf988aca5a0e1b902a4326523eb2c1fc6fe61825bf6fe"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1713,
+          "sha256": "b93c6d7758947a78e5345a5ed92fabe30ba5e34e6a788fe6149737962acba0a9"
+        },
+        {
+          "path": "build/test-results/iosSimulatorArm64Test/TEST-iosSimulatorArm64Test.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 673,
+          "sha256": "0f8062089dcc2aad594e053adb98ca33d464a28c729537a4f6e688b12b8dc925"
+        }
+      ]
+    },
+    {
+      "task": "jsBrowserTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1231,
+          "sha256": "161c98529382e6649c70fb2358c25d5c8a750d8130a006c8eb666d1e0d430f61"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 905,
+          "sha256": "ee66d10458ae6539d4e46e83b2119f0e16e22ecae9ea4b059a4ef4deb1e1f355"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1489,
+          "sha256": "aa0cf7544933708861280978eb09123e354da3fca7d285d74da8881f9cad9580"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1221,
+          "sha256": "87924bd40f3c8db9f168ddb2aa692d61b1f13333b9761ce41d812fead180de2f"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1381,
+          "sha256": "912e5123c203d4cc579049d7aa278c390420bce15c74c33d35a5b27170b24041"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1216,
+          "sha256": "6dc2e745e6a3399435f771118aa49e777d4119a563fd4b0a87082f7569c124d7"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1402,
+          "sha256": "1d482cf5cf8c8a67207f2fa20743a20d3d1effbb4a68867554de3cbaef67e883"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1698,
+          "sha256": "fb01e50af46fad76946c4bad564066ba475af647d6d71691a779aff128234c6e"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1239,
+          "sha256": "7afd3e367fefe126e5a401dc487071904f0d5a6ba27cfab9e5150dde4d0ec262"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 2333,
+          "sha256": "0fa05478b2a91aff397e7fb2f9d1568ca58a6868fd0f00a3c620e5bb70044b3f"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1924,
+          "sha256": "243968fbb00a87622cb25c92e71617fce1785d546a232f9f2c8e02609922b7a0"
+        },
+        {
+          "path": "build/test-results/jsBrowserTest/TEST-jsBrowserTest.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 715,
+          "sha256": "6ea144df87ce945ac2a98dcb9e07b4447799d51d4a14176ef22bc35c5446039a"
+        }
+      ]
+    },
+    {
+      "task": "jsNodeTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1003,
+          "sha256": "0a0f23a686cfbc050ce0012bac72318a08872e7d948abad2f3822b1ca33dd981"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 769,
+          "sha256": "c051956713ad3cff3b1acdb7c918d4a7980ad9fe25fe5e3a04ba891c08c34974"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1220,
+          "sha256": "61b1d403f5cea4878b399908b0a1053b8c4424354369526e03a0a2e2ef5fb79b"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 993,
+          "sha256": "3de1c0fd8ea43e28cc6634867c21ed07120cd62ead24c6920f321c213d534ec3"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1106,
+          "sha256": "b7d9d8965a72c9439e676bfabfa5ea2095c58326f7c21d899b2318e356ac762c"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 992,
+          "sha256": "7b2f43b50f0d71aac127166a81f7184dc544c3f00c6ad8e864b8e98f26aca636"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1125,
+          "sha256": "9bc9a56ab8a26d4f4bd7b817983af40ff4ea60f15beb3535900e7f02841572ca"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1339,
+          "sha256": "19f7d419919512ea6560e7b8986baf6744b16c9002431ae34c4d6a1f07bcf791"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1015,
+          "sha256": "a4ce68d2f626fc2f9340f8307fe2dfd06de36046f6690a4a1cd396a5d6cba93f"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1835,
+          "sha256": "d4894f0ba7ee9468ce09cb2ba94d3d867e424a4f26fd8fb8d2e540c242fee332"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1518,
+          "sha256": "0b9137d31244085a75e8ec94363835655c6b40927e358d0c270a751fd3104db4"
+        },
+        {
+          "path": "build/test-results/jsNodeTest/TEST-jsNodeTest.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 622,
+          "sha256": "8fd921eb96a421f45c3ef043aa24df4ed965a57a944b784decc272ac923a6b60"
+        }
+      ]
+    },
+    {
+      "task": "jvmTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 893,
+          "sha256": "068e70ae331ad96b393cc13f1cf06d36c16724f930fc427a9bcc07c8c8a25067"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 690,
+          "sha256": "1be87ffa05aae8367019aff1eb864bb4d9a3432882259d535c18ce63086a3c15"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1091,
+          "sha256": "90e4eeff4f2b051e38b74dfec2dc410d3e29b6f2c998f726e67d91d30ca45caa"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 882,
+          "sha256": "159c51e3368d7185a14fac756edfcdba7cfdcce5b0a7f554f8f079f0861561d4"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 983,
+          "sha256": "abe7514553f9375cb5f73aea27511e2dfd4ecf5cf446884fb0878705d7d590fa"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 881,
+          "sha256": "6abc20bdf2339b9970eb0928f797a92a11c86c770a713301ec13c0d2249ac7d3"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 997,
+          "sha256": "0538c8062d6cfcc30b313bc52e6ecee2f64f04ac73214bad541788e4b7df7328"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1186,
+          "sha256": "2e9a2e1e122bfbb24cdc8538e15efa9e1c6d58bf0cf59bc5342772518092ccb9"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 904,
+          "sha256": "6f6de34e96c8775ff92c4a266d81aba2ff99770c10820d7cabe8dd3c3dd14ea4"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1626,
+          "sha256": "0fae9f5a6e0cf1aa18ab8de2069c5980dd64a579893203fccb35c7b204c9490c"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1342,
+          "sha256": "871cfb7fa589210d6c36b0b049968b1bdc5925ef8b888766e6486c829e4d777e"
+        },
+        {
+          "path": "build/test-results/jvmTest/TEST-io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 559,
+          "sha256": "2800c0707d3b7a0c45921271bc14ed1e5a9293c0e1ed2bbb185deb3f0b79bd81"
+        }
+      ]
+    },
+    {
+      "task": "macosArm64Test",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1043,
+          "sha256": "1baac015073e5c3641cfdeacd294df9c3ec5c2359bbc7c44e7076c8dfa714d68"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 793,
+          "sha256": "489f7e8b3b617222116309551cbcc9a8e2af95b67f5023b7949cbfddbce1504e"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1264,
+          "sha256": "4bb9913df9f85f3346043447b741c070c69e84041a39b2666fe44849a4677a8c"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1033,
+          "sha256": "2575277ed1db1260e75908b40926a864ce0a4319128bef76210a15c65fa31804"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1148,
+          "sha256": "be694ede14209963d5d384ae38df45ef0b642f904fc87f51b02ec858dbe33c21"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1026,
+          "sha256": "83a05538d95fb3fab3a3fb562396c97c5489fd4fe8f3a9c616e30e17b8d8146d"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1173,
+          "sha256": "0faf2679e2aafe154967b8d09c5ff77f32606063a5c3ea3c9328610ce51fe7ce"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1397,
+          "sha256": "b47da55f7dd1c95b181ff768d03bdfa8f3a40b343d5a49cb8890503291032dde"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1049,
+          "sha256": "7bf620099b2bf156d6e6acc1fa3dfc406a5fb1d93d50cea1e2a0339f60f59ce3"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1907,
+          "sha256": "5dadb4d6b94335547505fe872bd6f6fcf4e1af9d39a9057214d95362c04618a4"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1574,
+          "sha256": "50da65c47fae6b87cc4c912e8803e8ace56f83d48dd59931c9d14fd4083b2a4d"
+        },
+        {
+          "path": "build/test-results/macosArm64Test/TEST-macosArm64Test.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 638,
+          "sha256": "18c2a183a1b0bf4e48e36ffcffa1314a4d2be2f946d2fc771ac37a31c598e95e"
+        }
+      ]
+    },
+    {
+      "task": "testAndroidHostTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 893,
+          "sha256": "c3ec1cbbd0e15abed9beec30f74261752738da00a9016eb1566da05dc931add5"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 701,
+          "sha256": "3370f285d0b1a5739eb37a5cdb142ef2a8bebb5593f0363e8b31511fcda152b1"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1093,
+          "sha256": "42cc9a38f16eaec938e62084b398ef84ad951f9da3977712cf1488b29fa184a8"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 883,
+          "sha256": "8179bd346b6e4bf515d1a7aacdc77ced01cd18d01e5b330fa42b8b53821a849f"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 979,
+          "sha256": "a80f5da988a7e3a49b200a6b442f85bc8d66c62d6e4f1b432735b94e793327ce"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 882,
+          "sha256": "5254c388ad5acc1dc2d21b01ceaeb9393978cbb8873276d4b1fe4cff881ba2aa"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 996,
+          "sha256": "00023c472f198525a76920b90d699afd467253074bba237f4e551d0f3fcea648"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1173,
+          "sha256": "e45a51aa5aeeb41d11416e722cd0a8444ef7a55f6c1865f273dd086ec1e01dd1"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 903,
+          "sha256": "a7b55b8cc1cbf03c67aa3e907dfe05aa5894211776e8c37f67c6003a81cffbab"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1595,
+          "sha256": "f8c92fecb677cf2ba3ef1691bb78de1bbfd317e929624ac6203d9c5ee4fb65a3"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1324,
+          "sha256": "d065f18f87243598bab189cd47d1bc0a26c856f76ecc5a8af5191ae1a728ddc4"
+        },
+        {
+          "path": "build/test-results/testAndroidHostTest/TEST-io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 573,
+          "sha256": "b8d1bb52cef2ac404e2b03bc587d791f0a84b7bd293470efb435430d2d7d7bae"
+        }
+      ]
+    },
+    {
+      "task": "tvosSimulatorArm64Test",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1121,
+          "sha256": "6ab0b283524bb7b0fffd8099270b7e0833b449bc637b7bf15faea980e882eab3"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 849,
+          "sha256": "6b139a6dbecda7a690d00f7a13cec2173a464fb11f5fdf62fca2b2dcc804bb67"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1360,
+          "sha256": "66557388215ef12468e75465498fa2c82fb5871a58b4047fcb5ea320eeb0b5b7"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1119,
+          "sha256": "6a6e0cd562653bcab86a5e002aed20054f2bfb5dfbc62e65f74eda0073596ac1"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1248,
+          "sha256": "751cdd859950858309970adea05cef8772b9e26818a657f6eec983408307316a"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1112,
+          "sha256": "289ed8c2a2ef5c5c570e0c43765f30979e2b4866a142bf2ce6f6661b234cb510"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1269,
+          "sha256": "738c5332a3933b6832c6e9df6fc73bf28c627264a2868fa50534e97a1c78c560"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1527,
+          "sha256": "5608f82d3524494858c05bb422ea76ccf99ba346849821fb07e38a9ed854edf5"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1133,
+          "sha256": "1eb570881bd7e5b6f9ba17336a2afeefb12597b37d2d4a2d2da1e2a7f49a8b4c"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 2087,
+          "sha256": "2f5d3d3361e862fe2e0f29387e9383dfcfdc4cbcb5aa3e218b04ba5719667dd4"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1728,
+          "sha256": "ad0133015a2f46eb4e370d649acc5c5b34aaffdc3b4b88d6b7b58e56be05eac1"
+        },
+        {
+          "path": "build/test-results/tvosSimulatorArm64Test/TEST-tvosSimulatorArm64Test.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 678,
+          "sha256": "683ee41e02a3731599af4af98f8ddb410e0bceaba5c65a869cbdfe57c5e7967b"
+        }
+      ]
+    },
+    {
+      "task": "wasmJsBrowserTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1275,
+          "sha256": "d83b08e9d1a1b388d144b9bbf67730872718383625cced4da44e513c755438dc"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 933,
+          "sha256": "60f2bf8fa0ac38db21b97de1733836f49ed7c187a1135b0bf6380763b530e243"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1543,
+          "sha256": "1fd4f93ff21b3941740a34a92cfd13ad0b2811b0ff74f702eadde1bf55cb156b"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1265,
+          "sha256": "7a45049d5ebf135a26daa1c25beb6cd6e33b7cce0188df5a3e63b27e4c753a03"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1433,
+          "sha256": "b57f4ed2573f98d6a81e741921b2064e244d13b99caac8c2d024a7699342374a"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1260,
+          "sha256": "f7f81b55b5066189662ec1b39a62ae978fbfd5eab0c93d83f1e96bd74a54f968"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1450,
+          "sha256": "5fab10636f716c2e14519c1cd7b74d72ca85c6ba192f9001d77d839218374fbd"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1768,
+          "sha256": "d06c89a36c8ff7bce4e30739629520340128ed9e0d55d29ccfbc0641a06ad169"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1283,
+          "sha256": "700c2ebe14aa27477bbba7be65ef6eec1f6281f787f355cfcf2930950f6d7b6f"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 2423,
+          "sha256": "e0c729145ec7625f2396a03cf4986929934c71f9da9ee1a9f15d3a517fb6fa16"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1998,
+          "sha256": "e0c314fd379e0176c78f53a3148a6b0f798f9f736ba671060e64c8b9e4c1420a"
+        },
+        {
+          "path": "build/test-results/wasmJsBrowserTest/TEST-wasmJsBrowserTest.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 739,
+          "sha256": "b8605bdd55423a22a9628be67d049804a20bebedd945acb6d037d35ab74b5437"
+        }
+      ]
+    },
+    {
+      "task": "wasmJsNodeTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1043,
+          "sha256": "ba57880bf57922f79c1af787353b789eaa57c586f197ede9a3ba65186a66bbb8"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 797,
+          "sha256": "8c1a8f8063d1dc9bae69e0cd534f99e66cdab2ff50b4e2f3501d84db2ee56486"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1272,
+          "sha256": "ffda7b40baff7b82c8653ce08abc757cfed6e530ec94a8a2a6feeaa611be3c4c"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1037,
+          "sha256": "985d8f4006f27701b85deea3caccb525403bab5387e89ced62e34fd9292d4cb9"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1160,
+          "sha256": "3d1bfc615e6bd53a6c77e529f815183af931d7694677826a52ae242fed6400e5"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1036,
+          "sha256": "d307175a5c177c3a0a0aa93909a1f4e9750bf5f83b7c34151149d6a5391a7555"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1177,
+          "sha256": "417069672e736b1e5b9651b4e64c83daf328d661d7eed08afa852f94523a8f23"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1403,
+          "sha256": "b3efc9e7ef50e7f4a5f453f030be2c3b149bc73f15f2df3af00dbf4479b55c97"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1057,
+          "sha256": "17822558b5ee6582562ddce5f4360d568e27f036e6cfd756d06b761fb40c71a0"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1923,
+          "sha256": "1eda489d6334e8d0e4fcb3f54419eb12f5830282943898003b75dc39ecbc1843"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1590,
+          "sha256": "56da6f7769647c5c9a237a05c432832ea1c327a85131cbd7f90a64415da71207"
+        },
+        {
+          "path": "build/test-results/wasmJsNodeTest/TEST-wasmJsNodeTest.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 642,
+          "sha256": "fb99f42977fc80c54f1f1bd9b807e732931b16d522c6239cf2c7f5f686fd6ee7"
+        }
+      ]
+    },
+    {
+      "task": "wasmWasiNodeTest",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1067,
+          "sha256": "a372aa75913f619e61c9933a6a8ac16ef7a81abe4310e16e653392fbedcfcc92"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 809,
+          "sha256": "9d883981eb0c51e1ae72ebaa5518cc210e8a4499d648823ee3e287338396908b"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1298,
+          "sha256": "3226a8a192a9e14857652e397c2ddfa0db75954cfebf1546e0f75beb36904c16"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1059,
+          "sha256": "5996deba8bca14a5b52e479e758421405af3755c57d494ca1324f95d4e3b2780"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1182,
+          "sha256": "c3bb0118ec80820cb9819b7c20169fb978d3c93beb59b8cfdf1cc0e5754cba51"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1054,
+          "sha256": "99e7dfa03408c4ba2909af3540366753d465c678fdc3ecdb94d2e5a682c2dd98"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1203,
+          "sha256": "e501d4927c803dea610fd502fa7f39e18faacaefeeab3af3a14e4f3daaf02ac0"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1437,
+          "sha256": "eb7a934416faa108e745bf79ed20546f064a61d0f9d22c2912ded1be31573cc8"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1081,
+          "sha256": "eb186db82b9f4cd870996d06c434c5ac53866d1ab786c7caf38cb94968095201"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 1969,
+          "sha256": "151c6bdbc355c0662d452f4d1c5aa796ce72dfba657d1197f5b5de30f53fae55"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1632,
+          "sha256": "b280ec6645ce73718ba79564127e7c3e9c039f1ecc2f9a5aadfe3e058dd44e2d"
+        },
+        {
+          "path": "build/test-results/wasmWasiNodeTest/TEST-wasmWasiNodeTest.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 652,
+          "sha256": "ce944035876c7f49f4f603e6f3d4922b5725554ff7f067459af24b96e6185b13"
+        }
+      ]
+    },
+    {
+      "task": "watchosSimulatorArm64Test",
+      "tests": 71,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reports": [
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.BcryptTest.xml",
+          "bytes": 1156,
+          "sha256": "6c3249c4c7ccde27160f3ddfbcc0a2af545df36cdf666719023dc0ceb4aa08b2"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.BenchmarkBehaviorTest.xml",
+          "bytes": 870,
+          "sha256": "15fb1c29e1094d201aaf1601027ffe35752258146246095177fab0aa5d3cdb67"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.CoreContractTest.xml",
+          "bytes": 1403,
+          "sha256": "3fc981b24666dfb77cd2b101a224186969732718f300098c19bf32d7e9668a53"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.CryptTest.xml",
+          "bytes": 1148,
+          "sha256": "7582b90d2ef606f19408196fb66c36a2a9657928dda3d67e019cdbaad9d421c1"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.DecoderTest.xml",
+          "bytes": 1289,
+          "sha256": "9000a64b38de7473aceba86c76f313d0df98a73f0e8102ccc550abed2382855e"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.EncoderTest.xml",
+          "bytes": 1143,
+          "sha256": "a0d4d26fc40ff73aad1902179061815545710d36a782aa738014330d1d3052c7"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.Pbkdf2Test.xml",
+          "bytes": 1308,
+          "sha256": "a01656352549ba4bd81519f732e7445001554454813939a8696150f41f62471b"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.Proptests.xml",
+          "bytes": 1578,
+          "sha256": "5aba5790f79e1995df4b7da5bc7b4e33797fccb007791b6f928ff8be06206b4a"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.ShaCryptTest.xml",
+          "bytes": 1166,
+          "sha256": "33fc85375f7d96d13b068e879344e421aa1988a0438bd93e29a7e72c1c5ee154"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.StandardTest.xml",
+          "bytes": 2154,
+          "sha256": "fa2ed2a1f680a174d96c0c5811deb3a9cf7aa5c7a3a7e3fb20460fad257ac91a"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.UrlTest.xml",
+          "bytes": 1783,
+          "sha256": "d4775a69667b461ace80314b05e9a57137ceeedb474768dff961d2c365b55338"
+        },
+        {
+          "path": "build/test-results/watchosSimulatorArm64Test/TEST-watchosSimulatorArm64Test.io.github.kotlinmania.base64ct.UsageExampleTest.xml",
+          "bytes": 693,
+          "sha256": "5afd3e8fcd5c7a39e3019a4a75e618d95d1a8ab9ca31ece323a00f9b177f7af4"
+        }
+      ]
+    }
+  ],
+  "native_test_binaries": [
+    {
+      "path": "build/bin/androidNativeArm64/debugTest/test.kexe",
+      "bytes": 5841112,
+      "sha256": "18b883605f29bf2e51e5fc34af647324f2d60af0b89c310aa790b53428b0a949",
+      "format": "ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /system/bin/linker64, with debug_info, not stripped"
+    },
+    {
+      "path": "build/bin/androidNativeX64/debugTest/test.kexe",
+      "bytes": 5893072,
+      "sha256": "9919be2013ad0b859de6dfcf4298d4a8e4e853b152432238f721b0cf2a8372ae",
+      "format": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /system/bin/linker64, with debug_info, not stripped"
+    },
+    {
+      "path": "build/bin/iosArm64/debugTest/test.kexe",
+      "bytes": 3461040,
+      "sha256": "ace7913bb430b55639e92a1b815c2b29859bf278a3336c4bac589981fa2e27d7",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/iosSimulatorArm64/debugTest/test.kexe",
+      "bytes": 3457800,
+      "sha256": "8d8257e12d31c1bdbb952b76a7921244de4596104647060640a28b985d636ff0",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/linuxArm64/debugTest/test.kexe",
+      "bytes": 4043472,
+      "sha256": "d32a9956fa4205bbf159918e70385c4be6e45f32535ad6b596860c43297ade8f",
+      "format": "ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 4.9.156, BuildID[sha1]=9771ad5fcd4ac85dcc80482a62d009ef144515f5, with debug_info, not stripped"
+    },
+    {
+      "path": "build/bin/linuxX64/debugTest/test.kexe",
+      "bytes": 4115384,
+      "sha256": "3afeeb3138ef033115e166efc408681bce57df3aff4d3dce00c0f30bec9bfc8d",
+      "format": "ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.16, BuildID[sha1]=f96d5e84aba8e8fb63029b0a36e24f1b541ca14e, with debug_info, not stripped"
+    },
+    {
+      "path": "build/bin/macosArm64/debugTest/test.kexe",
+      "bytes": 3451064,
+      "sha256": "f0aead2fc6d89cef318ff8018b15eea0ba11856c4bbc47a3efa0e2067d2c629a",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/mingwX64/debugTest/test.exe",
+      "bytes": 4368384,
+      "sha256": "53079ea66324c7fac9ea0edf87bf723480a126a8cb98b105eb36dfe69c6832cd",
+      "format": "PE32+ executable (console) x86-64, for MS Windows"
+    },
+    {
+      "path": "build/bin/tvosArm64/debugTest/test.kexe",
+      "bytes": 3373248,
+      "sha256": "4fb961eb8206c89bdda9cf45bed43c99ff8a6d7dd7cc6a4d14596302073a45a7",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/tvosSimulatorArm64/debugTest/test.kexe",
+      "bytes": 3353880,
+      "sha256": "4da8fb2827a03408f225c056b1164d0adef3c939eb894db358581572d75edcce",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/watchosDeviceArm64/debugTest/test.kexe",
+      "bytes": 3330960,
+      "sha256": "83085588fbd811bc2b6bbed4ccd6755f7b719737f46c46f3da212b4f4f5c5e0d",
+      "format": "Mach-O 64-bit executable arm64"
+    },
+    {
+      "path": "build/bin/watchosSimulatorArm64/debugTest/test.kexe",
+      "bytes": 3344520,
+      "sha256": "4bad7bb7b5e708b13f2d0032e3472cc7977e8736097d1b124eb9b73f2d0a87dc",
+      "format": "Mach-O 64-bit executable arm64"
+    }
+  ],
+  "klib_payloads": [
+    {
+      "path": "build/libs/base64ct-kotlin-androidNativeArm64Main-0.1.2.klib",
+      "bytes": 78929,
+      "sha256": "c70fa985125069fc13abd9ece4ba678f0f82727c5221f4875e5c858d643ab031",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-androidNativeX64Main-0.1.2.klib",
+      "bytes": 78917,
+      "sha256": "26f4ec4d86455438c7a47fd239f14081ad6e640978f928e503ef01e01417c1d3",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-iosArm64Main-0.1.2.klib",
+      "bytes": 78903,
+      "sha256": "b498f17cd1db2fe31e3c7f42e2a25d025d1524f371ad31faa6818193180665a4",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-iosSimulatorArm64Main-0.1.2.klib",
+      "bytes": 78969,
+      "sha256": "6d894e8cc6df6791026292b0301a49d3a24b982a082663166c16b7c4a32d2bda",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-js-0.1.2.klib",
+      "bytes": 77616,
+      "sha256": "e4f2b97551585434a05493c86f2ef84b4071b68319aa78cb6dc5c27bcc3bba30",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-linuxArm64Main-0.1.2.klib",
+      "bytes": 78916,
+      "sha256": "163187a8828b653b78960852925088ae2329dd9647f076cfc535fb5b639154eb",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-linuxX64Main-0.1.2.klib",
+      "bytes": 78904,
+      "sha256": "fb03aa5ded9c7efd6752318f9738adfb2ec47bcf193cb5e1b373447a8519f27e",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-macosArm64Main-0.1.2.klib",
+      "bytes": 78916,
+      "sha256": "3045b5414daffa01722b7241054c5b453d1b68dd03481c0b66eac980f03ff2cd",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-mingwX64Main-0.1.2.klib",
+      "bytes": 78906,
+      "sha256": "90b206e0042e72b36e1b148ccb03223a178c8671ee5033baad8745f23f91721c",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-tvosArm64Main-0.1.2.klib",
+      "bytes": 78910,
+      "sha256": "0e0e1f0e80b57db3ff09f8927d4fc668b5b2b2f51066db59a03f26789a8784a0",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-tvosSimulatorArm64Main-0.1.2.klib",
+      "bytes": 78976,
+      "sha256": "4bb3b5271588148ae7ee612a70b0546e396e1c0457ac16c23f0547748a1be1d2",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-wasm-js-0.1.2.klib",
+      "bytes": 77658,
+      "sha256": "29498bcc2a6b4dc8be0420e0a47159e050881270c1420878b78ef21a14814b26",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-wasm-wasi-0.1.2.klib",
+      "bytes": 77661,
+      "sha256": "8e3050530a79a224e9fb5e2a5e277d579414f0d88ea29e0ef8dd5aad21533484",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-watchosDeviceArm64Main-0.1.2.klib",
+      "bytes": 78977,
+      "sha256": "4079cd1e367dd5df20b86e55659a1ea2d4961a28f1db7f4a99c0450fb5e2962c",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    },
+    {
+      "path": "build/libs/base64ct-kotlin-watchosSimulatorArm64Main-0.1.2.klib",
+      "bytes": 78996,
+      "sha256": "6b8642a8ff5825cf517b2fe738df49d363fd929ff8fd62b2620d3bef613473f9",
+      "ir_entries": [
+        "default/ir/bodies.knb",
+        "default/ir/debugInfo.knd",
+        "default/ir/fileEntries.knf",
+        "default/ir/files.knf",
+        "default/ir/irDeclarations.knd",
+        "default/ir/signatures.knt",
+        "default/ir/strings.knt",
+        "default/ir/types.knt"
+      ],
+      "metadata_fragments": [
+        "default/linkdata/package_io.github.kotlinmania.base64ct/0_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct/1_base64ct.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet/0_alphabet.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.bcrypt/0_bcrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.crypt/0_crypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.pbkdf2/0_pbkdf2.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.shacrypt/0_shacrypt.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.standard/0_standard.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.alphabet.url/0_url.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.decoder/0_decoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoder/0_encoder.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.encoding/0_encoding.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.errors/0_errors.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/0_lineending.knm",
+        "default/linkdata/package_io.github.kotlinmania.base64ct.lineending/1_lineending.knm"
+      ]
+    }
+  ],
+  "android_test_apks": [
+    {
+      "path": "build/outputs/apk/androidTest/base64ct-kotlin-androidTest.apk",
+      "bytes": 1803207,
+      "sha256": "8ae409b771fc110320f3c306d5dedf194f1e9e2f0d6dfaafba5f1282f04c6a4b"
+    }
+  ],
+  "published_target_count": 17,
+  "local_publications": {
+    "base64ct-kotlin": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2-kotlin-tooling-metadata.json",
+        "bytes": 6516,
+        "sha256": "a662d561140bd779745434afef87f410f91ae8757a67ecc4f6c776507bb49b69"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2-sources.jar",
+        "bytes": 23657,
+        "sha256": "7f39f23ebb05c27bfa71048930be0a1757d9e0ea6ff56604fb9fc21fbc647116"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2.jar",
+        "bytes": 19032,
+        "sha256": "a2c607a5743bfb196f6d5d9128095bf13f4c760672c6a98c826fabdb97429570"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2.module",
+        "bytes": 31687,
+        "sha256": "1909a20e18d57e1a3423a49db8460ad477f8d4d6c1c60786700d6cd7469c66df"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin/0.1.2/base64ct-kotlin-0.1.2.pom",
+        "bytes": 2279,
+        "sha256": "3833044c317bd610116d8d59e2df39b9b99dc6157c1d57457ae50490f6a1b6b5"
+      }
+    ],
+    "base64ct-kotlin-android": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2-sources.jar",
+        "bytes": 18827,
+        "sha256": "e2a70817ea7cd294889d625403ce232fba0323f38351af4063b8b43450aa5d98"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2.aar",
+        "bytes": 79538,
+        "sha256": "08e98e5bd8946bf9a759d9ef8cd10cf83503c54139fe66c6ea62eed6ecd876cd"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2.module",
+        "bytes": 3816,
+        "sha256": "730ebf19d646e94f3df42869c5bac10b0fcb0c828d26be766460a7183175c335"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2.pom",
+        "bytes": 2320,
+        "sha256": "a2f65eaf9dce48265d9f8a8cbbbf4ac3807f58cb17076bc639891a69671e0e9b"
+      }
+    ],
+    "base64ct-kotlin-androidnativearm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativearm64/0.1.2/base64ct-kotlin-androidnativearm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativearm64/0.1.2/base64ct-kotlin-androidnativearm64-0.1.2-sources.jar",
+        "bytes": 19967,
+        "sha256": "4f93f0dae5d4b21e915c1bec0d79f23a802cc07322ae03cf675a0962fd262d02"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativearm64/0.1.2/base64ct-kotlin-androidnativearm64-0.1.2.klib",
+        "bytes": 78929,
+        "sha256": "c70fa985125069fc13abd9ece4ba678f0f82727c5221f4875e5c858d643ab031"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativearm64/0.1.2/base64ct-kotlin-androidnativearm64-0.1.2.module",
+        "bytes": 2881,
+        "sha256": "b35b2e333d63a32d80bd2f49c0f83dbf0d470a16a039f14fe9602d3b17821f5d"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativearm64/0.1.2/base64ct-kotlin-androidnativearm64-0.1.2.pom",
+        "bytes": 2362,
+        "sha256": "9b8c13d6820cdea53dc143d5078bce736d0ad42e202e407b3aa92e1bf61cf971"
+      }
+    ],
+    "base64ct-kotlin-androidnativex64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativex64/0.1.2/base64ct-kotlin-androidnativex64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativex64/0.1.2/base64ct-kotlin-androidnativex64-0.1.2-sources.jar",
+        "bytes": 19967,
+        "sha256": "4f93f0dae5d4b21e915c1bec0d79f23a802cc07322ae03cf675a0962fd262d02"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativex64/0.1.2/base64ct-kotlin-androidnativex64-0.1.2.klib",
+        "bytes": 78917,
+        "sha256": "26f4ec4d86455438c7a47fd239f14081ad6e640978f928e503ef01e01417c1d3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativex64/0.1.2/base64ct-kotlin-androidnativex64-0.1.2.module",
+        "bytes": 2865,
+        "sha256": "1c40155d82974337343659f4ec141d15b0e3db54b97e1209b119768577611610"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-androidnativex64/0.1.2/base64ct-kotlin-androidnativex64-0.1.2.pom",
+        "bytes": 2356,
+        "sha256": "aa20a2ac4b06cbbf05810652954483c72238896a61c56b89d21d1cf6461480c9"
+      }
+    ],
+    "base64ct-kotlin-iosarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2-sources.jar",
+        "bytes": 20487,
+        "sha256": "be4562e8756f7897f1815c0db4e2abaeab585275cefd9f438cc4bdfafd056aaf"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2.klib",
+        "bytes": 78903,
+        "sha256": "b498f17cd1db2fe31e3c7f42e2a25d025d1524f371ad31faa6818193180665a4"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2.module",
+        "bytes": 4278,
+        "sha256": "a7a246a891efb8703dfebbcc10174d1cbf9773799449c618a7c0d816fb4e899f"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iosarm64/0.1.2/base64ct-kotlin-iosarm64-0.1.2.pom",
+        "bytes": 2332,
+        "sha256": "547226a6b1c31ac1545d3ef6b24a36dcef27367cb0e23e72fc076dba712ed934"
+      }
+    ],
+    "base64ct-kotlin-iossimulatorarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2-sources.jar",
+        "bytes": 20487,
+        "sha256": "be4562e8756f7897f1815c0db4e2abaeab585275cefd9f438cc4bdfafd056aaf"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2.klib",
+        "bytes": 78969,
+        "sha256": "6d894e8cc6df6791026292b0301a49d3a24b982a082663166c16b7c4a32d2bda"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2.module",
+        "bytes": 4389,
+        "sha256": "916c88f8f2553e80f25d394ea25c0723baedc91eb939b992e968b292a2acab10"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-iossimulatorarm64/0.1.2/base64ct-kotlin-iossimulatorarm64-0.1.2.pom",
+        "bytes": 2359,
+        "sha256": "d6359e912dbc43cc3671cbfd786f2846d2586f82db66455574a7a2614dabc29c"
+      }
+    ],
+    "base64ct-kotlin-js": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-js/0.1.2/base64ct-kotlin-js-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-js/0.1.2/base64ct-kotlin-js-0.1.2-sources.jar",
+        "bytes": 19347,
+        "sha256": "a84897d09d0354162dd892a0799d9c76dcc17c807d925b06614c1bab641753d5"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-js/0.1.2/base64ct-kotlin-js-0.1.2.klib",
+        "bytes": 77616,
+        "sha256": "e4f2b97551585434a05493c86f2ef84b4071b68319aa78cb6dc5c27bcc3bba30"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-js/0.1.2/base64ct-kotlin-js-0.1.2.module",
+        "bytes": 4154,
+        "sha256": "13fe4ecfc7c29c70f8cbdf3f2e061d7ca80a875feab06e82730764283e98b309"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-js/0.1.2/base64ct-kotlin-js-0.1.2.pom",
+        "bytes": 2512,
+        "sha256": "8713db15eb08440f87e8593aca78f6e65dd6b0798096c0e7da0f0e387f9acc0f"
+      }
+    ],
+    "base64ct-kotlin-jvm": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-jvm/0.1.2/base64ct-kotlin-jvm-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-jvm/0.1.2/base64ct-kotlin-jvm-0.1.2-sources.jar",
+        "bytes": 18979,
+        "sha256": "3f42e2d608ac8a73c8efede5fc05a94492d84495926ba248ea69bd9fc98f9a34"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-jvm/0.1.2/base64ct-kotlin-jvm-0.1.2.jar",
+        "bytes": 89580,
+        "sha256": "4fa5263bac850800ddde5a987cd0da263682772fa35823cdd9bacba880e1d378"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-jvm/0.1.2/base64ct-kotlin-jvm-0.1.2.module",
+        "bytes": 3802,
+        "sha256": "be83eb08534c04e5f64c024b6822b2cedfd5c7ae7a3432d2a6b19233e355e07d"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-jvm/0.1.2/base64ct-kotlin-jvm-0.1.2.pom",
+        "bytes": 2287,
+        "sha256": "07de6f55fe5c786fe613f21cda9de288afffdff55ef4dff36a97d2fdae1caf7a"
+      }
+    ],
+    "base64ct-kotlin-linuxarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxarm64/0.1.2/base64ct-kotlin-linuxarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxarm64/0.1.2/base64ct-kotlin-linuxarm64-0.1.2-sources.jar",
+        "bytes": 19887,
+        "sha256": "e3bbe888e8867540265a6597589162f780f31f50b6c2fad2ba8e6f8d4fe6af48"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxarm64/0.1.2/base64ct-kotlin-linuxarm64-0.1.2.klib",
+        "bytes": 78916,
+        "sha256": "163187a8828b653b78960852925088ae2329dd9647f076cfc535fb5b639154eb"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxarm64/0.1.2/base64ct-kotlin-linuxarm64-0.1.2.module",
+        "bytes": 2829,
+        "sha256": "3d26895e2a6768021e22151062887aedb8aa554af58c73da353fd801bb481724"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxarm64/0.1.2/base64ct-kotlin-linuxarm64-0.1.2.pom",
+        "bytes": 2338,
+        "sha256": "e74e2468ccf7f9529f4642456b8a7a6a7be9878505a694c95bc021f78330bc22"
+      }
+    ],
+    "base64ct-kotlin-linuxx64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxx64/0.1.2/base64ct-kotlin-linuxx64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxx64/0.1.2/base64ct-kotlin-linuxx64-0.1.2-sources.jar",
+        "bytes": 19887,
+        "sha256": "e3bbe888e8867540265a6597589162f780f31f50b6c2fad2ba8e6f8d4fe6af48"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxx64/0.1.2/base64ct-kotlin-linuxx64-0.1.2.klib",
+        "bytes": 78904,
+        "sha256": "fb03aa5ded9c7efd6752318f9738adfb2ec47bcf193cb5e1b373447a8519f27e"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxx64/0.1.2/base64ct-kotlin-linuxx64-0.1.2.module",
+        "bytes": 2813,
+        "sha256": "6c8d25d9f425fd8821c551364d6cbcc5b90885a91327b94fc9126bc05bedeede"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-linuxx64/0.1.2/base64ct-kotlin-linuxx64-0.1.2.pom",
+        "bytes": 2332,
+        "sha256": "b117fd6bedd44084ca4c0ada604b9878ce8fc790b5e058a78d3d962f3cb93962"
+      }
+    ],
+    "base64ct-kotlin-macosarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2-sources.jar",
+        "bytes": 20507,
+        "sha256": "d2e78e1280a5ab6e3455430591dd71f587c058a781e0768e5295f03ae15a3f30"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2.klib",
+        "bytes": 78916,
+        "sha256": "3045b5414daffa01722b7241054c5b453d1b68dd03481c0b66eac980f03ff2cd"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2.module",
+        "bytes": 4302,
+        "sha256": "79276eb964a552e00128337d0b38ae93801098350a23c77233c52b0a1629bd59"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-macosarm64/0.1.2/base64ct-kotlin-macosarm64-0.1.2.pom",
+        "bytes": 2338,
+        "sha256": "b1707a06c17fc3976b64b9904592bd8d59642c4e4fd786e80926a6739b3bd5d5"
+      }
+    ],
+    "base64ct-kotlin-mingwx64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-mingwx64/0.1.2/base64ct-kotlin-mingwx64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-mingwx64/0.1.2/base64ct-kotlin-mingwx64-0.1.2-sources.jar",
+        "bytes": 19934,
+        "sha256": "b50e949268f0e0510667b9a94d589da9156a7fd8cca5fd0b8076e8dcdc5509b6"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-mingwx64/0.1.2/base64ct-kotlin-mingwx64-0.1.2.klib",
+        "bytes": 78906,
+        "sha256": "90b206e0042e72b36e1b148ccb03223a178c8671ee5033baad8745f23f91721c"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-mingwx64/0.1.2/base64ct-kotlin-mingwx64-0.1.2.module",
+        "bytes": 2813,
+        "sha256": "0e7784b3014e5848a0d26d355bf89df7637729c40b9dea59f7051623501eb120"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-mingwx64/0.1.2/base64ct-kotlin-mingwx64-0.1.2.pom",
+        "bytes": 2332,
+        "sha256": "a234a6ae0d2dda58421c29ea1aa4298ec21e9a4c5348a21bb14859f9372b4a1b"
+      }
+    ],
+    "base64ct-kotlin-tvosarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2-sources.jar",
+        "bytes": 20497,
+        "sha256": "a73d54f7cea30ca43e2ef8d0ea800944111729e389695a5455b490164162522c"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2.klib",
+        "bytes": 78910,
+        "sha256": "0e0e1f0e80b57db3ff09f8927d4fc668b5b2b2f51066db59a03f26789a8784a0"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2.module",
+        "bytes": 4290,
+        "sha256": "59a0374c54d5eea1a67dcd022548b27c35d17bfeede11c74c3d0d04ece3b5dc0"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvosarm64/0.1.2/base64ct-kotlin-tvosarm64-0.1.2.pom",
+        "bytes": 2335,
+        "sha256": "8bd51eb236e6c0d80cff760f228fda78bfe9812339085cc4b2f471d515f3e121"
+      }
+    ],
+    "base64ct-kotlin-tvossimulatorarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2-sources.jar",
+        "bytes": 20497,
+        "sha256": "a73d54f7cea30ca43e2ef8d0ea800944111729e389695a5455b490164162522c"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2.klib",
+        "bytes": 78976,
+        "sha256": "4bb3b5271588148ae7ee612a70b0546e396e1c0457ac16c23f0547748a1be1d2"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2.module",
+        "bytes": 4401,
+        "sha256": "553fa37df911c30b318e51a424842ddc42a246476a53b319909ae1eafcc90b1c"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-tvossimulatorarm64/0.1.2/base64ct-kotlin-tvossimulatorarm64-0.1.2.pom",
+        "bytes": 2362,
+        "sha256": "67a69c268e7084c43e1237f3c0cc05e4e1da0ff01e48e4f9c368260a5f90eab3"
+      }
+    ],
+    "base64ct-kotlin-wasm-js": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-js/0.1.2/base64ct-kotlin-wasm-js-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-js/0.1.2/base64ct-kotlin-wasm-js-0.1.2-sources.jar",
+        "bytes": 19411,
+        "sha256": "15d7281655add1f0157ef05a0ffbe1bd532de934631356d847f2998993b3c316"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-js/0.1.2/base64ct-kotlin-wasm-js-0.1.2.klib",
+        "bytes": 77658,
+        "sha256": "29498bcc2a6b4dc8be0420e0a47159e050881270c1420878b78ef21a14814b26"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-js/0.1.2/base64ct-kotlin-wasm-js-0.1.2.module",
+        "bytes": 3848,
+        "sha256": "73e5927301794fa8a5d62c6d9df1701c1d88def8287229a7f6d62ffda1f3331d"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-js/0.1.2/base64ct-kotlin-wasm-js-0.1.2.pom",
+        "bytes": 2337,
+        "sha256": "211e3bf55ce575eb069c53a2866047054b8019b6acd76e8f740ae0da6bbd73a0"
+      }
+    ],
+    "base64ct-kotlin-wasm-wasi": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-wasi/0.1.2/base64ct-kotlin-wasm-wasi-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-wasi/0.1.2/base64ct-kotlin-wasm-wasi-0.1.2-sources.jar",
+        "bytes": 18843,
+        "sha256": "c39779bb2042e896977c36809bee920856e41fae7a8aad64fadd14029c8898b7"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-wasi/0.1.2/base64ct-kotlin-wasm-wasi-0.1.2.klib",
+        "bytes": 77661,
+        "sha256": "8e3050530a79a224e9fb5e2a5e277d579414f0d88ea29e0ef8dd5aad21533484"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-wasi/0.1.2/base64ct-kotlin-wasm-wasi-0.1.2.module",
+        "bytes": 3872,
+        "sha256": "76e95488104ba4029219d49437ae9557d62770f26dd98d1a7415c4f743cdc16d"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-wasm-wasi/0.1.2/base64ct-kotlin-wasm-wasi-0.1.2.pom",
+        "bytes": 2345,
+        "sha256": "6c7f9689c8777f510246b3907d623d878f55eb7a733e2d11e43b27662a61e6fa"
+      }
+    ],
+    "base64ct-kotlin-watchosdevicearm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2-sources.jar",
+        "bytes": 20527,
+        "sha256": "b44e2a72b2de566476979d0da9f0f88a736e2539829e220100c9c5e5b6ec1997"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2.klib",
+        "bytes": 78977,
+        "sha256": "4079cd1e367dd5df20b86e55659a1ea2d4961a28f1db7f4a99c0450fb5e2962c"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2.module",
+        "bytes": 4401,
+        "sha256": "a925526f6366f12924d2de704040a1c1ffb6f6afba336b8c15473a3ecacb2816"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchosdevicearm64/0.1.2/base64ct-kotlin-watchosdevicearm64-0.1.2.pom",
+        "bytes": 2362,
+        "sha256": "c5e48d193cedadd4486f83fbff812e8f8d72af22c4442d56a5435209e675cc53"
+      }
+    ],
+    "base64ct-kotlin-watchossimulatorarm64": [
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2-javadoc.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2-metadata.jar",
+        "bytes": 261,
+        "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2-sources.jar",
+        "bytes": 20527,
+        "sha256": "b44e2a72b2de566476979d0da9f0f88a736e2539829e220100c9c5e5b6ec1997"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2.klib",
+        "bytes": 78996,
+        "sha256": "6b8642a8ff5825cf517b2fe738df49d363fd929ff8fd62b2620d3bef613473f9"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2.module",
+        "bytes": 4437,
+        "sha256": "8fd9fd6e185f937c6aa91a93e5a486b5c6a1b41c33a553a8661c6380ff1e799b"
+      },
+      {
+        "path": "/Users/sydney/.m2/repository/io/github/kotlinmania/base64ct-kotlin-watchossimulatorarm64/0.1.2/base64ct-kotlin-watchossimulatorarm64-0.1.2.pom",
+        "bytes": 2371,
+        "sha256": "689c06e92d3196c01b6f8b053d2f2d02fb842f1a72cfa177dadf27704c123e51"
+      }
+    ]
+  },
+  "generated_swift_sources": [
+    {
+      "path": "build/SPMPackage/macosArm64/Debug/Package.swift",
+      "bytes": 1591,
+      "sha256": "8513a737d36ebf9a7424d6f207eefc87742a7c5ca8dca7ef6b90083bb9ebc87a"
+    },
+    {
+      "path": "build/SPMPackage/macosArm64/Debug/Sources/KotlinRuntimeSupport/KotlinRuntimeSupport.swift",
+      "bytes": 9653,
+      "sha256": "3cf1d7fb7b1177a62400397dc94f8207ada3b26a955c09594def8ab8ee620560"
+    },
+    {
+      "path": "build/SPMPackage/macosArm64/Debug/Sources/Base64ct/Base64ct.swift",
+      "bytes": 97342,
+      "sha256": "9b278071cea9e2cf845ef144413a137743a2c547159e9e1364d6196f0a157761"
+    },
+    {
+      "path": "build/SPMPackage/macosArm64/Debug/Sources/KotlinStdlib/KotlinStdlib.swift",
+      "bytes": 3404,
+      "sha256": "18b62a31bde2e0c8c316afe21ede80e1c7b760fc9f9b0baac0a74c57bee049d7"
+    }
+  ],
+  "runtime_not_executed": [
+    "Linux x64",
+    "Linux ARM64",
+    "Windows x64",
+    "Android device JVM",
+    "Android Native ARM64",
+    "Android Native x64",
+    "iOS ARM64 device",
+    "tvOS ARM64 device",
+    "watchOS ARM64 device",
+    "Swift authored tests"
+  ],
+  "swift_blocker": {
+    "action": "swiftExportSmokeTest -> macosArm64DebugBuildSPMPackage",
+    "status": "failed",
+    "reason": "KotlinRuntimeSupport.swift:1:22: using '@_implementationOnly' without enabling library evolution for 'KotlinRuntimeSupport' may lead to instability during execution",
+    "generated_language_mode": "5",
+    "authored_language_mode": "6",
+    "warnings_as_errors": true
+  },
+  "local_android_verification": {
+    "status": "passed",
+    "bundle": "/Volumes/stuff/Projects/kotlinmania/base64ct-kotlin/automation-artifacts/base64ct-restoration-20261022/final-local-android-payload.zip",
+    "bundle_sha256": "642ba689cf58bf9542ec61cd3979ac8ef9306895971dc39ac3c8679b4e471734",
+    "coordinates": "io.github.kotlinmania:base64ct-kotlin:0.1.2",
+    "aar": "io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2.aar",
+    "aar_sha256": "08e98e5bd8946bf9a759d9ef8cd10cf83503c54139fe66c6ea62eed6ecd876cd",
+    "aar_bytes": 79538,
+    "required_classes": [
+      "io/github/kotlinmania/base64ct/alphabet/standard/Base64.class",
+      "io/github/kotlinmania/base64ct/decoder/Decoder.class",
+      "io/github/kotlinmania/base64ct/encoder/Encoder.class"
+    ],
+    "variants": [
+      "androidApiElements-published",
+      "androidRuntimeElements-published"
+    ],
+    "api_dependencies": [
+      "org.jetbrains.kotlin:kotlin-stdlib:kotlin-stdlib"
+    ],
+    "consumer_compilation": "Separate Gradle consumer must still resolve and compile this publication."
+  }
+}

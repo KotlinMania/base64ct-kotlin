@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "bundle": "/Volumes/stuff/Projects/kotlinmania/base64ct-kotlin/automation-artifacts/base64ct-restoration-20261022/final-local-android-payload.zip",
+  "bundle_sha256": "642ba689cf58bf9542ec61cd3979ac8ef9306895971dc39ac3c8679b4e471734",
+  "coordinates": "io.github.kotlinmania:base64ct-kotlin:0.1.2",
+  "aar": "io/github/kotlinmania/base64ct-kotlin-android/0.1.2/base64ct-kotlin-android-0.1.2.aar",
+  "aar_sha256": "08e98e5bd8946bf9a759d9ef8cd10cf83503c54139fe66c6ea62eed6ecd876cd",
+  "aar_bytes": 79538,
+  "required_classes": [
+    "io/github/kotlinmania/base64ct/alphabet/standard/Base64.class",
+    "io/github/kotlinmania/base64ct/decoder/Decoder.class",
+    "io/github/kotlinmania/base64ct/encoder/Encoder.class"
+  ],
+  "variants": [
+    "androidApiElements-published",
+    "androidRuntimeElements-published"
+  ],
+  "api_dependencies": [
+    "org.jetbrains.kotlin:kotlin-stdlib:kotlin-stdlib"
+  ],
+  "consumer_compilation": "Separate Gradle consumer must still resolve and compile this publication."
+}
