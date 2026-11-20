@@ -198,6 +198,12 @@ class Line internal constructor(
     }
 
     internal fun clone(): Line = Line(remaining)
+
+    internal companion object {
+        fun default(): Line = Line()
+
+        fun new(bytes: ByteSlice): Line = Line(bytes)
+    }
 }
 
 private class LineReader(

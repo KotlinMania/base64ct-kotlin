@@ -8,12 +8,20 @@ private const val INVALID_LENGTH_MSG = "invalid Base64 length"
 data object InvalidLengthError {
     override fun toString(): String = INVALID_LENGTH_MSG
 
+    fun fmt(): String = toString()
+
+    fun fmt(f: StringBuilder): StringBuilder = f.append(toString())
+
     fun toError(): Error = Error.InvalidLength
 }
 
 /** Invalid encoding of the provided Base64 string. */
 data object InvalidEncodingError {
     override fun toString(): String = INVALID_ENCODING_MSG
+
+    fun fmt(): String = toString()
+
+    fun fmt(f: StringBuilder): StringBuilder = f.append(toString())
 
     fun toError(): Error = Error.InvalidEncoding
 }
@@ -29,4 +37,14 @@ enum class Error {
             InvalidEncoding -> INVALID_ENCODING_MSG
             InvalidLength -> INVALID_LENGTH_MSG
         }
+
+    fun fmt(): String = toString()
+
+    fun fmt(f: StringBuilder): StringBuilder = f.append(toString())
+
+    companion object {
+        fun from(error: InvalidEncodingError): Error = InvalidEncoding
+
+        fun from(error: InvalidLengthError): Error = InvalidLength
+    }
 }

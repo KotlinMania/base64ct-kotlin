@@ -100,4 +100,44 @@ struct Base64ctExportTests {
         }
         #expect(base64.decode6bits(src: 33) == -1)
     }
+
+    @Test("Error display strings and conversions match Rust diagnostics")
+    func errorConversionsAndDisplay() {
+        #expect(errors.InvalidEncodingError.shared.fmt() == "invalid Base64 encoding")
+        #expect(errors.InvalidLengthError.shared.fmt() == "invalid Base64 length")
+        #expect(errors.Error.InvalidEncoding.fmt() == "invalid Base64 encoding")
+        #expect(errors.Error.InvalidLength.fmt() == "invalid Base64 length")
+        #expect(errors.Error.Companion.shared.from(error: errors.InvalidEncodingError.shared) == errors.Error.InvalidEncoding)
+        #expect(errors.Error.Companion.shared.from(error: errors.InvalidLengthError.shared) == errors.Error.InvalidLength)
+    }
+
+    @Test("Line endings expose byte sequences and platform default")
+    func lineEndingMetadata() {
+        let defaultEnding = lineending.LineEnding.Companion.shared.default()
+        #expect(defaultEnding == lineending.LineEnding.LF)
+        let cr = lineending.LineEnding.CR.asBytes()
+        #expect(lineending.LineEnding.CR.len() == 1)
+        #expect(cr.size == 1 && cr[0] == 13)
+        let lf = lineending.LineEnding.LF.asBytes()
+        #expect(lineending.LineEnding.LF.len() == 1)
+        #expect(lf.size == 1 && lf[0] == 10)
+        let crlf = lineending.LineEnding.CRLF.asBytes()
+        #expect(lineending.LineEnding.CRLF.len() == 2)
+        #expect(crlf.size == 2 && crlf[0] == 13 && crlf[1] == 10)
+    }
+
+    @Test("In-place decoding and encoder write/flush operate cleanly")
+    func decodeInPlaceAndWriterFlush() throws {
+        let inplace = try bytes(Array("AQID".utf8))
+        let decoded = try #require(alphabet.standard.Base64.shared.decodeInPlace(buf: inplace).value)
+        #expect(decoded.size == 3)
+        #expect(decoded[0] == 1 && decoded[1] == 2 && decoded[2] == 3)
+        let output = try bytes(Array(repeating: 0, count: 8))
+        let encoderValue = try #require(encoder.Encoder.Companion.shared.new(output: output, encoding: alphabet.standard.Base64.shared).value)
+        let written = encoderValue.write(buf: try bytes([1, 2]))
+        #expect(written.isSuccess)
+        #expect(written.value == 2)
+        #expect(encoderValue.flush().isSuccess)
+        #expect(encoderValue.finish().value == "AQI=")
+    }
 }

@@ -9,6 +9,7 @@ import io.github.kotlinmania.base64ct.alphabet.standard.Base64Unpadded
 import io.github.kotlinmania.base64ct.alphabet.url.Base64Url
 import io.github.kotlinmania.base64ct.alphabet.url.Base64UrlUnpadded
 import io.github.kotlinmania.base64ct.decoder.Decoder
+import io.github.kotlinmania.base64ct.decoder.Line
 import io.github.kotlinmania.base64ct.encoder.Encoder
 import io.github.kotlinmania.base64ct.encoding.encodedLenInner
 import io.github.kotlinmania.base64ct.errors.Error
@@ -105,10 +106,27 @@ class CoreContractTest {
 
     @Test fun diagnosticAndLineEndingValues() {
         assertEquals("invalid Base64 encoding", InvalidEncodingError.toString())
+        assertEquals("invalid Base64 encoding", InvalidEncodingError.fmt())
         assertEquals("invalid Base64 length", InvalidLengthError.toString())
+        assertEquals("invalid Base64 length", InvalidLengthError.fmt())
         assertEquals(Error.InvalidEncoding, InvalidEncodingError.toError())
         assertEquals(Error.InvalidLength, InvalidLengthError.toError())
+        assertEquals(Error.InvalidEncoding, Error.from(InvalidEncodingError))
+        assertEquals(Error.InvalidLength, Error.from(InvalidLengthError))
         assertEquals("invalid Base64 encoding", Error.InvalidEncoding.toString())
+        assertEquals("invalid Base64 encoding", Error.InvalidEncoding.fmt())
+        assertEquals("invalid Base64 length", Error.InvalidLength.fmt())
+        val buffer = StringBuilder()
+        InvalidEncodingError.fmt(buffer).append('|')
+        InvalidLengthError.fmt(buffer).append('|')
+        Error.InvalidEncoding.fmt(buffer).append('|')
+        Error.InvalidLength.fmt(buffer)
+        assertEquals(
+            "invalid Base64 encoding|invalid Base64 length|invalid Base64 encoding|invalid Base64 length",
+            buffer.toString(),
+        )
+        assertEquals(0, Line.default().len())
+        assertEquals(4, Line.new("AAAA".encodeToByteArray().asSlice()).len())
         assertContentEquals(byteArrayOf(13), LineEnding.CR.asBytes())
         assertContentEquals(byteArrayOf(10), LineEnding.LF.asBytes())
         assertContentEquals(byteArrayOf(13, 10), LineEnding.CRLF.asBytes())
