@@ -1,0 +1,22 @@
+{
+  "type": "port",
+  "name": "base64ct-kotlin",
+  "source": {
+    "path": "tmp/base64ct/src",
+    "lang": "rust"
+  },
+  "target": {
+    "path": "src/common/commonMain/kotlin/io/github/kotlinmania/base64ct",
+    "lang": "kotlin"
+  },
+  "checks": {
+    "deep": true,
+    "missing": true,
+    "todos": true,
+    "lint": true
+  },
+  "reexport_modules": [
+    "mod.rs",
+    "lib.rs"
+  ]
+}

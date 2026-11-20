@@ -1,0 +1,50 @@
+ M .github/workflows/android-native.yml
+ M .github/workflows/android.yml
+ M .github/workflows/ci.yml
+ M .github/workflows/ios.yml
+ M .github/workflows/js.yml
+ M .github/workflows/jvm.yml
+ M .github/workflows/linux.yml
+ M .github/workflows/macos.yml
+ M .github/workflows/publish.yml
+ M .github/workflows/swift.yml
+ M .github/workflows/tvos.yml
+ M .github/workflows/wasm.yml
+ M .github/workflows/watchos.yml
+ M .github/workflows/windows.yml
+ M .gitignore
+ M AGENTS.md
+ M ANDROID.md
+ M SWIFT.md
+ M build.gradle.kts
+ M detekt.yml
+ M gradle.properties
+ M gradle/libs.versions.toml
+ M gradle/npm/karma-webpack/lib/karma-webpack/controller.js
+ M gradle/npm/karma-webpack/package.json
+ M gradlew
+ M gradlew.bat
+ M kotlin-js-store/package.json
+ M kotlin-js-store/wasm/package.json
+ M kotlin-js-store/yarn.lock
+ M native/node-ffi/README.md
+ T native/node-ffi/node_modules/.bin/glob
+ T native/node-ffi/node_modules/.bin/mkdirp
+ T native/node-ffi/node_modules/.bin/node-gyp
+ T native/node-ffi/node_modules/.bin/node-which
+ T native/node-ffi/node_modules/.bin/nopt
+ T native/node-ffi/node_modules/.bin/semver
+ T native/node-ffi/node_modules/cross-spawn/node_modules/.bin/node-which
+ M native/node-ffi/package-lock.json
+ M native/node-ffi/package.json
+ M settings.gradle.kts
+ D src/jsMain/kotlin/io/github/kotlinmania/template/TemplateNativeBindings.kt
+ M src/jvmMain/c/README.md
+ M src/jvmMain/c/ffi_jni.c
+ D src/jvmMain/kotlin/io/github/kotlinmania/template/internal/FfiJni.kt
+ M swift-test-harness/Package.swift
+?? V2_SWIFT.md
+?? automation-artifacts/
+?? karma.config.d/
+?? src/jvmMain/kotlin/io/github/kotlinmania/base64ct/
+?? verification/

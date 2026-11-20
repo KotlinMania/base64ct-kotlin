@@ -1,0 +1,151 @@
+Base64ct local publication restoration — 2026-10-22
+
+Result
+
+The original missing-KLIB failure is repaired. The final, exact command was:
+
+  ./gradlew publishToMavenLocal -Dmaven.repo.local=/Users/sydney/.m2/repository
+
+Raw exit: 0. All 17 target publications and the owning KMP root were written to
+/Users/sydney/.m2/repository at version 0.1.2. The previously missing Android
+Native ARM64 KLIB is now 78,929 bytes, with eight IR files and 15 metadata
+fragments. All 15 KLIB publications contain actual IR and metadata. The Android
+AAR is 79,538 bytes and passes the existing bytecode/metadata/hash/POM verifier.
+
+The complete local test/build aggregate returned 1 solely because strict Swift
+export fails in generated KotlinRuntimeSupport.swift. It otherwise executed 71
+tests on each of 11 host runtimes (781 executions, zero failures/errors/skips),
+compiled and linked all 12 native test binaries, assembled the Android device
+test APK, and passed detekt and ktlint. This is not an all-runtime or Swift pass.
+
+Evidence
+
+- final-publication-command.txt, final-publication.log, final-publication.exit
+- final-local-gate-command.txt, final-local-gate.log, final-local-gate.exit
+- final-test-results.zip: actual final test XML, including named cases
+- final-evidence.json: exact source hashes, local artifact hashes and sizes,
+  native executable formats, test counts, ownership-relative changes and exits
+- final-local-android-verification.json: real local publication acceptance receipt
+- final-local-android-payload.zip: unchanged files from the local Maven repository
+- final-swift-generated-evidence.zip: actual generated Swift sources and manifest
+- final-ast.log: final structural scan, with its unresolved matching diagnostics
+- before-status.txt, before.diff, before-sha256.json: ownership baseline
+- final-status.txt, final.diff: final tracked state, including preserved prior work
+
+Instructions and ownership
+
+Before implementation, I read the complete applicable ancestor and local
+AGENTS.md files (973 lines each), SWIFT.md (2,799 lines), V2_SWIFT.md (837 lines),
+ANDROID.md (355 lines), workspace JS_SECURITY.md, README, verification guidance,
+and the formatting configuration. Ancestor/local AGENTS.md SHA-256:
+4f3ed2053ae27c36f8442879fc323dab559fc63ded5b6f399aeec3b166f49898.
+All upstream implementation and test files were read completely before their
+corresponding manual Kotlin patches. No source edits were delegated or generated.
+
+Only base64ct-kotlin was edited. Ownership handoff was confirmed before edits;
+the recording wrapper checked for overlapping Base64ct Java processes before
+each Gradle invocation. Existing work, all targets, validated version pins, FFI
+configuration, dependency Swift 5 mode, authored Swift 6 mode and Werror remain.
+Sydney's explicit local-only restrictions take precedence over older workflow
+instructions to commit, push or release, and the explicit mixed Swift modes take
+precedence over older all-Swift-6 documentation. No CI, commit, push, PR, tag or
+public publication was performed. Changes remain uncommitted.
+
+Confirmed cause and implementation
+
+The initial common/native source directories contained no Kotlin implementation.
+All seven reachable commits lacked it. The template was not excluding an
+existing common implementation. Baseline publication reproduced NO-SOURCE for
+Android Native ARM64 followed by the missing artifact error (raw exit 1).
+
+The checked-in upstream base64ct 1.8.3 is pure Rust, has no production crate
+dependencies, and uses no C/FFI imports. Its unsafe sections concern byte-buffer
+overlap and UTF-8 conversion. No C/JNI/N-API binding is required by this upstream
+implementation. Existing unrelated FFI scaffold/configuration was preserved.
+
+Manual source additions:
+
+- 14 commonMain files: all 12 implementation modules, ByteSlice storage views,
+  and concrete operation result types.
+- Arithmetic standard padded/unpadded, URL padded/unpadded, bcrypt, crypt,
+  PBKDF2 and SHA-crypt alphabets; SHA-crypt's byte order is preserved.
+- Caller-owned and allocating encode/decode operations, in-place decoding,
+  strict canonical-padding checks, lengths and distinct error diagnostics.
+- Incremental Encoder<E> and Decoder<E>, partial blocks, wrapped lines, CR/LF/
+  CRLF, remaining buffer views, clone/read/write/flush/finish behavior.
+- Seven platform actual files for the platform-default line ending. All common
+  implementation remains shared by the full 17-target matrix.
+- 14 commonTest files containing 71 cases: upstream fixed vectors and unit
+  tests, every original property-test behavior using a deterministic corpus
+  against independent Kotlin stdlib Base64, upstream usage examples, benchmark
+  workload behavior, and boundary/storage/error tests. No performance claim is
+  made from the benchmark workload assertions.
+- Six real authored Swift behavioral cases replacing the import-only test.
+  They are written against the inspected generated API but have not executed.
+
+Kotlin adaptation details: methods use camelCase; required public Rust type
+names and alphabet generics are retained. Concrete result payloads expose
+diagnostics without erasing known payload types. ByteSlice represents borrowed
+caller-owned storage. Kotlin-owned strings and the append-to-list return value
+use owned values; decoder clones share immutable input while copying state.
+The upstream deprecated crypt alphabet is documented as deprecated in KDoc;
+it remains available for parity tests without warning suppressions. Arithmetic
+structure is preserved; runtime timing characteristics have not been measured.
+
+Build and manifest changes
+
+- build.gradle.kts: Kotlin test-JUnit integration for JVM, Android host and
+  Android device tests. Other changes from the ownership baseline are formatting
+  and trailing commas required by ktlint, verified with a whitespace-normalized
+  comparison. No production library dependency or target was added/removed.
+- gradle.properties: populated the Android publication verifier's public class
+  contract with Base64, Decoder and Encoder bytecode paths.
+- settings.gradle.kts: formatting only.
+- swift-test-harness/Tests/SwiftTestHarnessTests/ExampleTests.swift: six real cases.
+- Gradle regenerated locks by removing only unused @js-joda/core 3.2.0. The
+  dedicated Wasm lockfile contained only that unused entry and was removed by
+  Gradle. Every pre-existing newer JS/security pin remains unchanged.
+
+Package.swift required no further restoration: its dependency Base64ct, product
+Base64ctLibrary, -lBase64ct archive and generated package path agree with
+project.frameworkName=Base64ct and the actual generated Package.swift. No
+Template name or exportBuildDirectory override was present. The manifest is
+byte-for-byte unchanged from ownership handoff, including its authored .v6 mode.
+
+Validation scope and remaining blockers
+
+Passed runtimes: JVM, Android host JVM, JS Chrome, JS Node, Wasm JS Chrome,
+Wasm JS Node, Wasm WASI Node, macOS ARM64, iOS simulator ARM64, tvOS simulator
+ARM64 and watchOS simulator ARM64. All 71 cases ran on each final suite.
+
+Actual native test executable formats were inspected: Android Native ARM64/x64
+ELF, Linux ARM64/x64 ELF, Windows x64 PE, and Apple ARM64 Mach-O. The Android
+device test APK is 1,803,207 bytes. Cross-linking does not prove runtime behavior.
+Linux/Windows, Android device/native, and physical Apple device runtimes were
+not executed in this macOS run. No target or runtime check was disabled.
+
+Exact remaining Swift blocker:
+  Action: swiftExportSmokeTest -> macosArm64DebugBuildSPMPackage
+  Target: build/SPMPackage/macosArm64/Debug/Sources/KotlinRuntimeSupport/
+          KotlinRuntimeSupport.swift:1:22
+  Status: executed and failed (Xcode exit 65; nested/outer Gradle exit 1).
+  Reason: using '@_implementationOnly' without enabling library evolution for
+          'KotlinRuntimeSupport' may lead to instability during execution.
+
+The actual invocation retains SWIFT_VERSION=5 and Swift/C warnings as errors;
+authored tests retain mode 6. The local V2_SWIFT guide identifies this as a stock
+exporter resource/printer defect. Its documented repaired exporter/SDK recipe
+is tied to 2.4.20; this repository's protected validated pin is 2.4.21. A coherent
+matching tooling repair is outside this repository-only restoration. No cached
+tooling, SDK, generated source or warning policy was patched to bypass it.
+The six authored Swift cases therefore have zero executed results.
+
+The final AST scan runs successfully and matches the 12 production modules, but
+does not establish complete parity: it rejects companion identities sharing
+basenames between src/alphabet/*.rs and tests/*.rs, and reports Rust fmt/from/
+default/associated-type names and test helpers as unmatched. Correct source/test
+provenance markers are retained. Actual vectors, property comparisons and runtime
+results are preserved separately rather than treating a score as acceptance.
+
+The Android receipt verifies publication structure and real bytecode; it is not
+an independent Android consumer compile or a Central publication receipt.

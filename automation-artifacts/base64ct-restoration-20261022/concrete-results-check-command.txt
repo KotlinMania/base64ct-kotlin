@@ -1,0 +1,1 @@
+./gradlew jvmTest compileAndroidDeviceTest detekt ktlintCheck --continue --rerun-tasks

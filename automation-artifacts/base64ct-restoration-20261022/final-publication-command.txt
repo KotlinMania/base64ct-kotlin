@@ -1,0 +1,1 @@
+./gradlew publishToMavenLocal -Dmaven.repo.local=/Users/sydney/.m2/repository
